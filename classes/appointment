@@ -1,0 +1,58 @@
+class appointment
+{
+
+private $starTime;
+private $endTime;
+private $appDate;
+private $reason;
+private $patientId;
+
+function __construct($appId,$starTime,$endTime,
+$appDate,$reason,$patientId)
+{
+$this->starTime=starTime;
+$this->endTime=$endTime;
+$this->appDate=$appDate;
+$this->reason=$reason
+$this->patientId=patientId;
+}
+	public function getStarTime(){
+		return $this->starTime;
+	}
+
+	public function setStarTime($starTime){
+		$this->starTime = $starTime;
+	}
+
+	public function getEndTime(){
+		return $this->endTime;
+	}
+
+	public function setEndTime($endTime){
+		$this->endTime = $endTime;
+	}
+
+	public function getAppDate(){
+		return $this->appDate;
+	}
+
+	public function setAppDate($appDate){
+		$this->appDate = $appDate;
+	}
+
+	public function getReason(){
+		return $this->reason;
+	}
+
+	public function setReason($reason){
+		$this->reason = $reason;
+	}
+
+	public function getPatientId(){
+		return $this->patientId;
+	}
+
+	public function setPatientId($patientId){
+		$this->patientId = $patientId;
+	}
+}
